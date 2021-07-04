@@ -1,9 +1,12 @@
 .header{
-    padding:20px;
-    background-color:#5664D2
+    position: fixed;
+    padding:8px;
+    background-color:#5664D2;
+    width:100%;
+    z-index: 999;
 }
 .header_logo{
-    height: 35px;
+    height: 50px;
     object-fit: contain;
     margin-left: 20px;
 }

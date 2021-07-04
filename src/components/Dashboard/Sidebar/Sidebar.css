@@ -1,9 +1,105 @@
-.sidebar{
-    flex: 0.2;
+.sidebar {
+  flex: 0.2;
+  position: fixed;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  color: #6b778c;
+  border-right: 1px solid lightgrey;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-.sidebar > hr{
-    height: 1px;
-    border: 0;
-    background-color: lightgrey;
-    margin: 10px 0;
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .sidebar {
+    width: 20%;
+  }
+  .btn-brand {
+    margin-left: -10px;
+  }
+}
+.profile-container {
+  padding: 0px 10px 0px 10px;
+  border-bottom: 1px solid lightgrey;
+}
+.profile-container img {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  margin-left: 35%;
+  margin-top: 10px;
+}
+.profile-title {
+  text-align: center;
+  font-weight: 400;
+  color: #172b4d;
+  margin-top: -1px;
+}
+.profile-container p {
+  text-align: center;
+  margin-top: -22px;
+  font-size: 14px;
+  color: grey;
+  font-weight: 400;
+}
+.need-more {
+  background-color: rgb(244, 246, 248);
+  margin: 16px;
+  padding: 16px;
+  color: #172b4d;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.need-more h3 {
+  margin: 0px 0px 0.35em;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.235;
+  letter-spacing: -0.06px;
+  text-align: center;
+}
+.need-more p {
+  margin: 0px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.btn-brand {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin-left: 25px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  min-width: 64px;
+  padding: 6px 16px;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(86, 100, 210);
+  box-shadow: rgb(0 0 0 / 31%) 0px 0px 1px 0px,
+    rgb(0 0 0 / 25%) 0px 2px 2px -2px;
 }
